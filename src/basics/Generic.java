@@ -7,6 +7,7 @@
 // 1. Generic Class
 // 2. Generic Method
 package basics;
+
 class GenericClass<T, E> {
 
     T var;

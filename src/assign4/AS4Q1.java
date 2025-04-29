@@ -1,6 +1,5 @@
 package assign4;
 
-
 class UnreachableObject {
 
     String name;

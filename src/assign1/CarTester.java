@@ -1,3 +1,6 @@
+// Only Getter and Setters
+package assign1;
+
 class Car {
     private String make;
     private String model;

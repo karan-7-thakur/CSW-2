@@ -1,5 +1,8 @@
 {
-  "java.project.sourcePaths": ["src", "src\\assign1"],
+  "java.project.sourcePaths": [
+    "src"
+  ],
   "java.project.outputPath": "bin",
-  "java.project.referencedLibraries": []
+  "java.project.referencedLibraries": [],
+  "java.debug.settings.onBuildFailureProceed": true
 }

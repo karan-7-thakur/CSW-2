@@ -1,3 +1,5 @@
+package assign1;
+
 interface Vehicle {
     void accelerate();
 

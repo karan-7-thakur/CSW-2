@@ -1,3 +1,4 @@
+package assign1;
 
 class Rectangle {
     private int width;

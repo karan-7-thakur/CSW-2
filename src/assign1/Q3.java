@@ -1,3 +1,5 @@
+package assign1;
+
 class Point {
 
     private int x;
@@ -8,6 +10,7 @@ class Point {
         this.y = y;
     };
 
+    // Copy Constructor
     public Point(Point p) {
         this.x = p.x;
         this.y = p.y;
