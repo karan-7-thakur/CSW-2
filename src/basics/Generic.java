@@ -44,6 +44,7 @@ class Main {
         // toString() Method -----------------------------
         System.out.println(obj1);
         System.out.println(obj1.toString());
+        obj1.sum(10, 20);
 
     }
 

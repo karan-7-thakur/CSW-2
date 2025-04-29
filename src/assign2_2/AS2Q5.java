@@ -39,7 +39,6 @@ class Library {
 
     public Library() {
         books = new HashMap<>();
-
     }
 
     void addBook(int id, Book b) {
@@ -48,6 +47,12 @@ class Library {
         } else {
             System.out.println("Book with id " + id + " already exists");
         }
+
+        // if (books.putIfAbsent(id, b) == null) {
+        // System.out.println("Book id Inserted");
+        // } else {
+        // System.out.println("Book Already Existed");
+        // }
     }
 
     void removeBook(int id) {

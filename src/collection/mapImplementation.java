@@ -1,4 +1,5 @@
 package collection;
+
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
@@ -21,19 +22,17 @@ public class mapImplementation {
         System.out.println(map);
 
         // For each loop
-        for(Map.Entry<Integer, String > entry: map.entrySet()){
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
 
         // Iterator
-
-        Iterator<Map.Entry<Integer, String>> iterator = map.entrySet().iterator(); 
+        Iterator<Map.Entry<Integer, String>> iterator = map.entrySet().iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
-            
+
         }
 
-        
     }
-    
+
 }

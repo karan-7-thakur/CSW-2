@@ -20,7 +20,7 @@ class UnreachableObject {
     }
 
     @Override
-    public void finalize() {
+    public void finalize() throws Throwable {
         System.out.println("Cleared object: " + name);
 
     }
@@ -33,6 +33,7 @@ public class AS4Q1 {
         Runtime runtime = Runtime.getRuntime();
         System.out.println("Total memory: " + runtime.totalMemory() / (1024.0 * 1024) + "MB");
         System.out.println("Free Memory before object creation: " + runtime.freeMemory() / (1024.0 * 1024) + "MB");
+
         UnreachableObject obj = new UnreachableObject("HEllo");
 
         obj.show();

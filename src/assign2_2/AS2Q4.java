@@ -48,7 +48,6 @@ class School {
 
     void addStudent(Student s) {
         students.add(s);
-
     }
 
     void removeStudent(Student s) {

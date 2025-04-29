@@ -10,6 +10,7 @@ public class AS2Q9 {
 
         for (int elem : arr) {
             if (set.contains(elem)) {
+                // Duplicates
                 System.out.print(elem + " ");
             } else {
                 set.add(elem);

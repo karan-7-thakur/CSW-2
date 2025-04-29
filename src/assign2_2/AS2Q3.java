@@ -16,7 +16,7 @@ class Car implements Comparable<Car> {
 
     @Override
     public int compareTo(Car obj2) {
-        return this.stock - obj2.stock;
+        return this.stock - obj2.stock; // Increasing
     }
 
     public int getModelNo() {

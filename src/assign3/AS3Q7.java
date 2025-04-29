@@ -2,40 +2,48 @@ package assign3;
 
 public class AS3Q7 {
 
-    static void addMatrix(int[][] matrixA, int[][] matrixB) {
-        int[][] ans = new int[matrixA.length][matrixB.length];
-        for (int i = 0; i < matrixA.length; i++) {
-            for (int j = 0; j < matrixB.length; j++) {
-                ans[i][j] = matrixA[i][j] + matrixB[i][j];
-            }
-        }
-
-        System.out.println("Addition of the matrix is");
-        for (int i = 0; i < ans.length; i++) {
-            for (int j = 0; j < ans.length; j++) {
-                System.out.print(ans[i][j] + " ");
+    static void printMatrix(int[][] matrix, String message) {
+        System.out.println("\n" + message);
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
     }
 
-    static void mulitplyMatrix(int[][] matrixA, int[][] matrixB) {
-        int[][] ans = new int[matrixA.length][matrixB.length];
+    static void addMatrix(int[][] matrixA, int[][] matrixB) {
+        int[][] ans = new int[matrixA.length][matrixB[0].length];
         for (int i = 0; i < matrixA.length; i++) {
-            for (int j = 0; j < matrixB.length; j++) {
-                for (int k = 0; k < matrixA.length; k++) {
+            for (int j = 0; j < matrixB[0].length; j++) {
+                ans[i][j] = matrixA[i][j] + matrixB[i][j];
+            }
+        }
+        printMatrix(ans, "Addition of the matrix is");
+    }
+
+    static void mulitplyMatrix(int[][] matrixA, int[][] matrixB) {
+        int[][] ans = new int[matrixA.length][matrixB[0].length];
+        for (int i = 0; i < matrixA.length; i++) {
+            for (int j = 0; j < matrixB[0].length; j++) {
+                for (int k = 0; k < matrixA[0].length; k++) {
                     ans[i][j] += matrixA[i][k] * matrixB[k][j];
                 }
             }
         }
 
-        System.out.println("\nMultiplication of the matrix is");
-        for (int i = 0; i < ans.length; i++) {
-            for (int j = 0; j < ans.length; j++) {
-                System.out.print(ans[i][j] + " ");
+        printMatrix(ans, "Multiplication of the matrix is");
+    }
+
+    static void transposeMatrix(int[][] matrix) {
+        int[][] transposed = new int[matrix[0].length][matrix.length];
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                transposed[j][i] = matrix[i][j];
             }
-            System.out.println();
         }
+
+        printMatrix(transposed, "Transpose of the matrix is");
     }
 
     public static void main(String[] args) {
@@ -52,6 +60,8 @@ public class AS3Q7 {
         try {
             addMatrix(matrixA, matrixB);
             mulitplyMatrix(matrixA, matrixB);
+            transposeMatrix(matrixB);
+
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println(e);
         }

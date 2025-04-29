@@ -26,7 +26,7 @@ public class AS3Q1 {
 
     public static void main(String[] args) throws NullPointerException {
 
-        String str = new String("Alpha123");
+        String str = new String("");
         System.out.println(getNum(str)); // prints 123
 
     }

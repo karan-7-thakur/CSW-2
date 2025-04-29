@@ -40,7 +40,7 @@ class ArrayListUsers {
     private ArrayList<User> users;
 
     public ArrayListUsers() {
-        users = new ArrayList<User>();
+        users = new ArrayList<>();
     }
 
     void addUsers(User u) {

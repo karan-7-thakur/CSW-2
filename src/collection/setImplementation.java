@@ -20,39 +20,31 @@ public class setImplementation {
         set.remove(5);
         System.out.println(set);
 
-
         Set<Integer> set2 = new HashSet<>();
         set2.addAll(set);
         set2.add(10);
         set2.add(20);
- 
-       
+
         // System.out.println(set2);
         set2.removeAll(set);
         set2.add(5);
         set2.add(6);
         System.out.println(set2);
 
-        set.removeAll(set2);    // set Difference
-        set.retainAll(set2);   // intersection
+        set.removeAll(set2); // set Difference
+        set.retainAll(set2); // intersection
         System.out.println(set);
 
-
-        //  Set<Integer> set = new LinkedHashSet<>(); -> maintains insertion ordering
-        //  Set<Integer> set = new TreeSet<>(); -> maintains sorted order
-        
+        // Set<Integer> set = new LinkedHashSet<>(); -> maintains insertion ordering
+        // Set<Integer> set = new TreeSet<>(); -> maintains sorted order
 
         // Traversing - Iterator
-
         System.out.println(set);
         Iterator<Integer> iterator = set.iterator();
 
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
-        
 
-        
-        
     }
 }
