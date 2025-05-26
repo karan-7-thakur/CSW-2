@@ -15,7 +15,7 @@ public class Q14 {
                 "C:\\Users\\user\\OneDrive\\Documents\\2nd yr material\\SEM 04\\CSW\\src\\assign5\\diary.txt");
         File destination = new File(
                 "C:\\Users\\user\\OneDrive\\Documents\\2nd yr material\\SEM 04\\CSW\\src\\assign5\\diary2.txt");
-
+    
         try {
             if (!destination.exists()) {
                 destination.createNewFile();

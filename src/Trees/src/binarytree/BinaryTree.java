@@ -118,6 +118,7 @@ class Node {
 public class BinaryTree {
     public static void main(String[] args) {
         Node tree = new Node(10);
+
         tree.left(20);
         tree.right(30);
         tree.left.left(40);
