@@ -39,6 +39,7 @@ public class q4 {
         int[][] result = new int[A.length][B[0].length];
 
         MatrixMulThread[] threads = new MatrixMulThread[A.length];
+
         for (int i = 0; i < threads.length; i++) {
             threads[i] = new MatrixMulThread(A, B, result, i);
             threads[i].start();

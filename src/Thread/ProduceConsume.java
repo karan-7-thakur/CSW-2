@@ -4,6 +4,7 @@ public class ProduceConsume {
     int data = 0;
     boolean check = true; // can produce
 
+    // Is like a setter method
     public synchronized void produce(int val) {
         while (!check) {
             try {
@@ -18,6 +19,7 @@ public class ProduceConsume {
         notify();
     }
 
+    // is like a getter method
     public synchronized void consume() {
         while (check) {
             try {
